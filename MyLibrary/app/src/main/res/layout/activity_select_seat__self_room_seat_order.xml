@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back01"
+    android:orientation="vertical"
+    tools:context="com.wit.dylan.activity.SelectSeat_SelfRoomSeatOrder">
+
+    <include
+        android:id="@+id/SelfRoom_toolbar"
+        layout="@layout/app_topbar_main" />
+
+    <TextView
+        android:id="@+id/text_selfroomname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000000"
+        android:layout_below="@id/SelfRoom_toolbar"
+        android:text="您所在的自习室：" />
+
+    <com.wit.dylan.customview.SeatTable
+        android:id="@+id/seatView"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/text_selfroomname"
+        />
+
+    <Button
+        android:id="@+id/confirm_selectseat"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/seatView"
+        android:layout_marginTop="10dp"
+        android:text="确定选择"
+        android:background="@drawable/button_bg"/>
+</RelativeLayout>

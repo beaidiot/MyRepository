@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_personData"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="个人信息" />
+        <item
+            android:id="@+id/nav_bookCheck"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="书籍检索" />
+        <item
+            android:id="@+id/nav_lendCheck"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="借阅查询" />
+        <item
+            android:id="@+id/nav_selfRoomSeatbook"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="自习室位置预约" />
+    </group>
+
+    <group  android:id="@+id/系统"  android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_ModifyPwd"
+            android:icon="@drawable/ic_menu_send"
+            android:title="修改密码" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_menu_send"
+            android:title="关于" />
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_menu_send"
+            android:title="注销" />
+    </group>
+
+
+</menu>
